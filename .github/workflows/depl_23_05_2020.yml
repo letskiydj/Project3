@@ -15,8 +15,8 @@ jobs:
   my_test_depl:
     runs-on: ubuntu-latest 
     steps:
-   - name: Print TEST MESSAGE
-     run : echo "TEST MESSAGE"
+      - name: Print TEST MESSAGE
+        run : echo "TEST MESSAGE"
 
   my_test_depl2: 
     runs-on: ubuntu-latest
