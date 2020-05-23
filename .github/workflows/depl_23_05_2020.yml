@@ -22,6 +22,7 @@ jobs:
 
   my_test_depl2: 
     runs-on: ubuntu-latest
+    needs: [my_test_depl]
     steps:
       - name: Print TEST_MESSAGE ver2.0
         run: echo "TEST_MESSAGE ver2.0"
@@ -30,10 +31,9 @@ jobs:
         
   my_test_depl3:
     runs-on: ubuntu-latest
-    needs: [my_test_depl, my_test_depl2]
     steps:
       - name: Git clone my repo
-        uses: action/checkout@v1
+        uses: actions/checkout@v1
       - name: List of files
         run: ls -la
     
