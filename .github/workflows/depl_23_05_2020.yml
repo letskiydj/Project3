@@ -1,7 +1,7 @@
 name: Deploy_23_05_2020
 env:
   App_name    : "My DEPL"
-  Depl_PACKAGE_Name: "DEPL ver 2.0 $ - {{ github.sha }}"  
+  Depl_PACKAGE_Name: "DEPL ver 2.0 - ${{ github.sha }}"  
 on: 
   push:
     branches: 
