@@ -27,4 +27,4 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Install Nginx
-        run: apt-get install nginx
+        run: sudo apt-get install nginx
